@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2d3436;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    color: #2d3436;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-bottom: 3px solid #74b9ff;
+    padding-bottom: 10px;
+}
+
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.student-card {
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.student-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.student-card h3 {
+    color: #2d3436;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.student-info {
+    margin-bottom: 8px;
+}
+
+.student-info strong {
+    color: #2d3436;
+    font-weight: 600;
+}
+
+.student-info span {
+    color: #636e72;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.skill-tag {
+    background: #74b9ff;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.leader-badge {
+    background: #00b894;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.operations {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.operations button {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.operations button:hover {
+    transform: translateY(-2px);
+}
+
+.operations button:active {
+    transform: translateY(0);
+}
+
+.console {
+    background: #2d3436;
+    color: #00b894;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    max-height: 300px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+}
+
+.console .output-line {
+    margin-bottom: 5px;
+}
+
+.console .student-output {
+    color: #74b9ff;
+    font-weight: bold;
+}
+
+.console .skills-output {
+    color: #fdcb6e;
+}
+
+.console .address-output {
+    color: #e17055;
+} 

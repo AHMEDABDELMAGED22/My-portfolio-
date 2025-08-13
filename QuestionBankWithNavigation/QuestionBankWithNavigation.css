@@ -1,0 +1,26 @@
+.question-container {
+max-width: 400px;
+margin: 60px auto;
+padding: 30px;
+border-radius: 8px;
+background: #f5f5f5;
+text-align: center;
+}
+#question {
+font-size: 20px;
+margin-bottom: 20px;
+}
+.nav-buttons {
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+#prevBtn, #nextBtn {
+padding: 10px 20px;
+border-radius: 6px;
+border: none;
+background: #007bff;
+color: #fff;
+cursor: pointer;
+font-size: 16px;
+}

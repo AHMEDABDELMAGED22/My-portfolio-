@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Mohamed - Frontend Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .project-links .project-link {
+            position: relative;
+            z-index: 2;
+            pointer-events: auto;
+            display: inline-block;
+            background-color: #dc2626;
+            color: #fff !important;
+            padding: 8px 14px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: none;
+            outline: none;
+        }
+
+        .project-links .project-link:hover {
+            background-color: #b91c1c;
+            transform: translateY(-2px);
+            color: #fff !important;
+        }
+
+        .project-links .project-link:active,
+        .project-links .project-link:visited,
+        .project-links .project-link:focus {
+            color: #fff !important;
+            background-color: #dc2626;
+        }
+
+        .project-card {
+            position: relative;
+            z-index: 1;
+        }
+
+        .project-card * {
+            pointer-events: auto;
+        }
+
+        [data-aos] {
+            pointer-events: auto !important;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Ahmed Mohamed</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="floating-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
+                <h1 class="hero-title" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">Ahmed Mohamed</h1>
+                <h2 class="hero-subtitle" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">Frontend Developer with React</h2>
+                <p class="hero-description" data-aos="fade-up" data-aos-duration="600" data-aos-delay="800">Passionate about creating beautiful, functional, and user-friendly web experiences</p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-duration="600" data-aos-delay="1000">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
+                <div class="profile-placeholder">
+                    <img src="./WhatsApp Image 2025-08-12 at 19.38.36_1348f0eb.jpg" alt="Ahmed Mohamed" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="600">About Me</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
+                    <div class="professional-statement">
+                        <h3>Statement</h3>
+                        <p>I am a passionate Frontend Developer with a strong foundation in modern web technologies and a commitment to creating exceptional user experiences. My journey in technology began with a deep interest in problem-solving and has evolved into a focused pursuit of frontend development excellence.</p>
+                        
+                        <p>As a current Information Technology student at Minia University and an active trainee at ICPC MINYA UNIVERSITY COMMUNITY, I combine academic rigor with practical application. Currently, I am privileged to be part of the Ministry-sponsored Digital Egypt Pioneers Initiative, gaining hands-on experience in React development and modern web technologies.</p>
+                        
+                        <p>My approach to development centers on creating solutions that not only meet technical requirements but also deliver meaningful value to users. I believe in writing clean, maintainable code and staying current with industry best practices and emerging technologies.</p>
+                    </div>
+                </div>
+                <div class="about-stats" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
+                    <div class="stat" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
+                        <h3>5+</h3>
+                        <p>Projects</p>
+                    </div>
+                    <div class="stat" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="800">
+                        <h3>24</h3>
+                        <p>Weeks Internship</p>
+                    </div>
+                    <div class="stat" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="1000">
+                        <h3>4</h3>
+                        <p>Certificates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="600">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Problem Solving</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+                    <h3><i class="fas fa-palette"></i> Design Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Adobe XD</span>
+                        <span class="skill-tag">Adobe Illustrator</span>
+                        <span class="skill-tag">Adobe Photoshop</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
+                    <h3><i class="fas fa-calculator"></i> Mathematics</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Calculus</span>
+                        <span class="skill-tag">Probability</span>
+                        <span class="skill-tag">Distributions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="600">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="project-image">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Zero Waste</h3>
+                        <p>A startup boot camp project featuring web page and mobile interface design for a waste collection app. Users receive bonuses in the form of money or gifts from partner markets.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Adobe XD</span>
+                            <span class="tech-tag">Adobe Illustrator</span>
+                            <span class="tech-tag">UI/UX Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.linkedin.com/in/ahmed-mohamed-039278231/overlay/experience/1923591581/multiple-media-viewer/?profileId=ACoAADnh1S0BJ1cfKY1mIazr9LYHPDDlwq9xl2g&treasuryMediaId=1735663988157" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div class="project-image">
+                        <i class="fas fa-sign-in-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Login Form</h3>
+                        <p>A responsive and user-friendly login form with modern styling and form validation. Features clean design with smooth animations and proper user feedback.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="./Day05/login-form.html" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <div class="project-image">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Student Data Management</h3>
+                        <p>A comprehensive student data management system with CRUD operations. Allows adding, editing, and managing student information with a clean interface.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="./Day05/student-data.html" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                    <div class="project-image">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Simple Calculator</h3>
+                        <p>A functional calculator with basic arithmetic operations. Features a clean design and responsive layout for easy number calculations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="./SimpleCalculator/SimpleCalculator.html" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                    <div class="project-image">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Quote of the Day Widget</h3>
+                        <p>An inspirational quote widget that displays random motivational quotes. Features smooth transitions and a modern card-based design.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="./QuoteOfTheDayWidget/QuoteOfTheDayWidget.html" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
+                    <div class="project-image">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Question Bank with Navigation</h3>
+                        <p>An interactive question bank system with navigation controls. Allows users to browse through questions with next/previous functionality.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="./QuestionBankWithNavigation/QuestionBankWithNavigation.html" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="600">Experience & Education</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
+                    <div class="timeline-content">
+                        <h3>Frontend Developer Trainee</h3>
+                        <h4>Digital Egypt Pioneers Initiative</h4>
+                        <p class="timeline-date">Ministry-sponsored Program</p>
+                        <p>24-week internship focusing on hands-on React development and modern web technologies.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
+                    <div class="timeline-content">
+                        <h3>Trainee</h3>
+                        <h4>ICPC MINYA UNIVERSITY COMMUNITY</h4>
+                        <p class="timeline-date">Current</p>
+                        <p>Building strong foundation in theoretical and practical application of Information Technology.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="600">
+                    <div class="timeline-content">
+                        <h3>Bachelor's in Information Technology</h3>
+                        <h4>Minia University, Minia, Egypt</h4>
+                        <p class="timeline-date">August 2024 - Present</p>
+                        <p>GPA: 3.3 | Faculty of Science, Information Technology program</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="600">Certificates</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
+                    <div class="certificate-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>4th place in Startup Boot Camp</h3>
+                    <p>Athar Accelerator</p>
+                    <span class="certificate-date">February 2022</span>
+                </div>
+                <div class="certificate-card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="400">
+                    <div class="certificate-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Learn HTML & CSS</h3>
+                    <p>Mahara-Tech</p>
+                    <span class="certificate-date">July 2025</span>
+                </div>
+                <div class="certificate-card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
+                    <div class="certificate-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cybersecurity Foundations</h3>
+                    <p>LinkedIn</p>
+                    <span class="certificate-date">February 2025</span>
+                </div>
+                <div class="certificate-card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="800">
+                    <div class="certificate-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Introduction in Web Design</h3>
+                    <p>Creativa</p>
+                    <span class="certificate-date">August 2021</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="600">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
+                    <div class="contact-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>am22112004@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+201025893610</p>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="800">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Minia, Egypt</p>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="1000">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h3>Languages</h3>
+                            <p>Arabic (Native), English (Fluent)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-links" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
+                    <a href="https://www.linkedin.com/in/ahmed-mohamed-039278231/" class="social-link" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/AHMEDABDELMAGED22" class="social-link" data-aos="fade-up" data-aos-duration="600" data-aos-delay="800" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ahmed Mohamed. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
